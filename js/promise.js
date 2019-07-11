@@ -80,3 +80,5 @@ MyPromise.prototype.then = function(onResolve = () => {}, onReject = () => {}) {
         })
     }
 }
+
+export default MyPromise;
