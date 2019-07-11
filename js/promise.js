@@ -52,17 +52,26 @@ function resolutionProcedure(promise, value, resolve, reject) {
     resolve(value); // 继续触发下一个then
 };
 
-MyPromise.prototype.then = function(onResolve = () => {}, onReject = () => {}) {
+// 需要设置默认的onResolve和onReject，并且将结果传递下去，这一步很关键
+MyPromise.prototype.then = function(onResolve = value => value, onReject = err => { throw err }) {
     let nextPromise; // then可以链式调用，所以必须返回一个promise
 
     // 如果promise还处于pending状态，则收集相关的回调
     if (this.status === PENDING) {
         return nextPromise = new MyPromise((resolve, reject) => {
             this.rejectCallback.push(value => {
-                resolutionProcedure(nextPromise, onReject(value), resolve, reject);
+                try {
+                    resolutionProcedure(nextPromise, onReject(value), resolve, reject);
+                } catch (e) {
+                    reject(e);
+                }
             });
             this.resolveCallback.push(value => {
-                resolutionProcedure(nextPromise, onResolve(value), resolve, reject);
+                try {
+                    resolutionProcedure(nextPromise, onResolve(value), resolve, reject);
+                } catch (e) {
+                    reject(e);
+                }
             });
         })
     }
@@ -70,15 +79,27 @@ MyPromise.prototype.then = function(onResolve = () => {}, onReject = () => {}) {
     // 不为 pending 状态则直接触发回调 当在setTimeOut等宏任务中调用then方法，就会有可能 status不为 pending
     if (this.status === RESOLVE) {
         return nextPromise = new MyPromise((resolve, reject) => {
-            resolutionProcedure(nextPromise, onResolve(value), resolve, reject);
+            try {
+                resolutionProcedure(nextPromise, onResolve(value), resolve, reject);
+            } catch (e) {
+                reject(e);
+            }
         })
     }
 
     if (this.status === REJECT) {
         return nextPromise = new MyPromise((resolve, reject) => {
-            resolutionProcedure(nextPromise, onReject(value), resolve, reject);
+            try {
+                resolutionProcedure(nextPromise, onReject(value), resolve, reject);
+            } catch (e) {
+                reject(e);
+            }
         })
     }
+}
+
+MyPromise.prototype.catch = function(onReject = () => {}) {
+    this.then(undefined, onReject);
 }
 
 export default MyPromise;
