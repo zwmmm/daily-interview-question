@@ -17,5 +17,7 @@ npm test
 1. https://github.com/Advanced-Frontend/Daily-Interview-Question
 2. https://leetcode-cn.com/
 
-- (2019-7-10 promise的实现)[https://github.com/zwmmm/daily-interview-question/blob/master/js/promise.js]
-- (2019-7-11 洗牌算法 - 打乱数组)[https://github.com/zwmmm/daily-interview-question/blob/master/algorithm/shuffle.js]
+## 题目
+
+- [2019-7-10 promise的实现](https://github.com/zwmmm/daily-interview-question/blob/master/js/promise.js)
+- [2019-7-11 洗牌算法 - 打乱数组](https://github.com/zwmmm/daily-interview-question/blob/master/algorithm/shuffle.js)
