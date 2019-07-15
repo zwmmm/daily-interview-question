@@ -22,3 +22,5 @@ npm test
 - [2019-7-10 promise的实现](https://github.com/zwmmm/daily-interview-question/blob/master/js/promise.js)
 - [2019-7-11 洗牌算法 - 打乱数组](https://github.com/zwmmm/daily-interview-question/blob/master/algorithm/shuffle.js)
 - [2019-7-12 单例模式](https://github.com/zwmmm/daily-interview-question/blob/master/js/singleton.js)
+- [2019-7-13 flex解决css三大问题](https://github.com/zwmmm/daily-interview-question/blob/master/css/flex.html)
+- [2019-7-14 查找字符串中最长的子串](https://github.com/zwmmm/daily-interview-question/blob/master/css/flex.html)
