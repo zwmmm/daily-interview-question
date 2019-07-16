@@ -25,3 +25,4 @@ npm test
 - [2019-7-13 flex解决css三大问题](https://github.com/zwmmm/daily-interview-question/blob/master/css/flex.html)
 - [2019-7-14 查找字符串中最长的子串](https://github.com/zwmmm/daily-interview-question/blob/master/css/flex.html)
 - [2019-7-15 实现一个lazyMan方法](https://github.com/zwmmm/daily-interview-question/blob/master/js/lazy-man.js)
+- [2019-7-16 模拟call方法](https://github.com/zwmmm/daily-interview-question/blob/master/js/call.js)
