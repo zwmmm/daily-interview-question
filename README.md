@@ -14,8 +14,8 @@ npm test
 
 ## 题目来源
 
-1. https://github.com/Advanced-Frontend/Daily-Interview-Question
-2. https://leetcode-cn.com/
+- https://github.com/Advanced-Frontend/Daily-Interview-Question
+- https://leetcode-cn.com/
 
 ## 题目
 
