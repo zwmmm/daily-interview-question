@@ -4,7 +4,8 @@
 
 
 // 整体的思路是使用时间戳来判断是否需要执行函数
-//
+// 使用初始时间为0来决定是否第一次立即执行
+// 使用setTimeOut来暂存最后一次执行
 const defaultOptions = { leading: true, remaining: true }
 export default function(fn, delay, options = defaultOptions) {
     const { leading, trailing } = options

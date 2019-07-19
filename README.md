@@ -27,3 +27,5 @@ npm test
 - [2019-7-15 实现一个lazyMan方法](https://github.com/zwmmm/daily-interview-question/blob/master/js/lazy-man.js)
 - [2019-7-16 模拟call方法](https://github.com/zwmmm/daily-interview-question/blob/master/js/call.js)
 - [2019-7-17 无重复字符最长子串](https://github.com/zwmmm/daily-interview-question/blob/master/algorithm/length-of-longest-substring.js)
+- [2019-7-18 函数节流](https://github.com/zwmmm/daily-interview-question/blob/master/js/throttle.js)
+- [2019-7-19 函数防抖](https://github.com/zwmmm/daily-interview-question/blob/master/js/debounce.js)
