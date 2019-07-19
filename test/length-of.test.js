@@ -1,4 +1,4 @@
-import lengthof from '../js/length-of-longest-substring'
+import lengthof from '../algorithm/length-of-longest-substring'
 import assert from 'assert'
 
 describe('无重复字符的最长子串', function() {
