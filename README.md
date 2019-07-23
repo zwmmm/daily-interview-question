@@ -29,3 +29,5 @@ npm test
 - [2019-7-17 无重复字符最长子串](https://github.com/zwmmm/daily-interview-question/blob/master/algorithm/length-of-longest-substring.js)
 - [2019-7-18 函数节流](https://github.com/zwmmm/daily-interview-question/blob/master/js/throttle.js)
 - [2019-7-19 函数防抖](https://github.com/zwmmm/daily-interview-question/blob/master/js/debounce.js)
+- [2019-7-22 数组简写](https://github.com/zwmmm/daily-interview-question/blob/master/algorithm/transform-str.js)
+- [2019-7-23 json diff算法](https://github.com/zwmmm/daily-interview-question/blob/master/algorithm/diff.js)
