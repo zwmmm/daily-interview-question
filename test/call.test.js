@@ -1,5 +1,6 @@
 import assert from 'assert'
 import call from '../js/call'
+import { describe, it } from 'mocha';
 
 Function.prototype.myCall = call;
 
